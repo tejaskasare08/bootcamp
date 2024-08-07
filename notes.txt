@@ -78,8 +78,8 @@ GIT VS GITHUB
 is s/w                        is service
 for version control           git repository hosting
 created by linux              by microsoft
-
-
+free                          paid
+installed locally in system   hosted on web
 
 
 
