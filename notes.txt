@@ -1,0 +1,97 @@
+
+1  raj     pune
+2  rajat   pune
+3  aniket  pune
+4  rani    mumbai
+5  sumit   mumbai
+
+tell me city wise employees
+-------------------------
+select city from employee; 
+
+pune
+pune
+pune
+mumbai
+mumbai
+-----------------------------
+select city from employee group by city;
+pune
+mumbai 
+---------------------------------
+select count(id), city from employee group by city;
+3 pune
+2 mumbai
+
+----------------------------------------------
+select name, city from employee group by city;
+
+
+
+record 1
+
+
+record 2
+record 3
+
+---------------------------------------------------------------
+UAT 
+
+before deploying s/w to end user, we can test that s/w using UAT by considering folling parameters
+
+by using UAT we are checking softwares user-frindlyness, functionalities, performance, completeness, accurancy, security, scalabilaty, compatibility, bugs, 
+
+-------------------------------------------------------------------
+API 
+
+client --> request (HTML, CSS)
+
+server --> process request (python-django, java-sbms, js-node-express)
+
+-- common interface that is going to be unsertand by client and server
+
+client -> making request in the form of url (string)
+server  --> is giving response must be undersandable by client
+       --> so there are 2 popular formats in which server send respnse
+	   to the client that is either json or xml
+
+if response is in json then you are making API - REST API
+if response is in XML then you are making API - SOAP API
+---------------------------------------------------------------
+REST VS SOAP
+
+REST 
+	- REpresentatinal State Transfer
+	- use HTTP protocols - GET,PUT,POST,DELETE,PATC
+        - response is in JSON format
+
+SOAP
+	- Simple Object access protocol
+	- related with security
+	- for encryptons or digital signature etc
+	- enterprise level application (banking)
+	- response is in XML format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
