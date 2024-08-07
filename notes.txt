@@ -80,6 +80,43 @@ for version control           git repository hosting
 created by linux              by microsoft
 free                          paid
 installed locally in system   hosted on web
+--------------------------------------------------------
+drop database bootcamp;
+create database bootcamp;
+use bootcamp;
+
+create table employee(
+id int primary key,
+name varchar(20),
+city varchar(20),
+salary float
+);
+
+insert into employee values
+(1,"raj","pune",25000),
+(2,"rajat","pune",35000),
+(3,"aniket","pune",45000),
+(4,"rani","mumbai",20000),
+(5,"sumit","mumbai",15000);
+
+select city from employee; 
+select city from employee group by city; 
+select count(id), city from employee group by city; 
+select name, city from employee group by city;
+
+select max(salary), city from employee group by city ;
+
+-- show me the cities where the max salary is more than 35000
+select max(salary), city from employee group by city having max(salary)>35000;
+
+-- total salary for each city
+select sum(salary), city from employee group by city ;
+
+-- show me empl who is getting max salary
+select * from employee order by salary desc limit 1;
+
+-- show me empl who is getting second max salary
+select * from employee order by salary desc limit 1 offset 1;
 
 
 
