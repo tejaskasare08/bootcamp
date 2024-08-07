@@ -72,6 +72,14 @@ SOAP
 	- enterprise level application (banking)
 	- response is in XML format
 
+----------------------------------------------------------------
+
+GIT VS GITHUB
+is s/w                        is service
+for version control           git repository hosting
+created by linux              by microsoft
+
+
 
 
 
